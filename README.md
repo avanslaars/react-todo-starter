@@ -1,12 +1,10 @@
 # Project Setup
 
-These instructions are for running the completed application created in the Egghead.io course [Build Your First Production Quality React App](https://egghead.io/courses/build-your-first-production-quality-react-app)
-
 ## Get The Code
 
-From a terminal, clone this repo into the folder of your choosing (in this example, I'm using `egghead-todo`)
+From a terminal, clone this repo into the folder of your choosing
 
-* `git clone git@github.com:avanslaars/egghead_react_todo_app_course.git egghead-todo`
+* `git clone git@github.com:avanslaars/react-todo-starter.git`
 
 Then install the project dependencies with npm. **Be sure to `cd` into the project root first**
 
@@ -18,19 +16,11 @@ To run this application, you will need to have the mock API server **and** the w
 
 This project uses [json-server](https://github.com/typicode/json-server) to provide a local REST service that uses a `.json` file as its data source. For more information on how to use json-server, there is an egghead video available: [Egghead.io free video tutorial - Creating demo APIs with json-server](https://egghead.io/lessons/nodejs-creating-demo-apis-with-json-server)
 
-
-
-### Install json-server
-
-You can install it globally with `npm i -g json-server`. This is a one-time setup.
-
-
-
 ### Running json-server
 
-Be sure to `cd` into the project's root directory. From there, run:  
+From the project's root directory, run:  
 
-* `json-server -p 8080 db.json`
+* `npm run server`
   * This will run the server on port `8080` and use `db.json` as the data source
 
 ## Running the Project
