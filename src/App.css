@@ -19,18 +19,22 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .Todo-App {
-  padding-top:20px;
+  padding-top: 20px;
   display: inline-block;
   text-align: left;
 }
 
 input {
-  font-size: 20px
+  font-size: 20px;
 }
 
 ul {
@@ -41,32 +45,28 @@ li {
   list-style-type: none;
 }
 
-li span.delete-item {
-  visibility: hidden;
+span.delete-item button {
+  color: red;
+  float: right;
 }
 
-span.delete-item a {
-  text-decoration: none;
-  color:red;
-}
-
-li:hover span.delete-item {
-  visibility: visible;
+li:hover span.delete-item button {
+  font-weight: bolder;
 }
 
 .error {
-  color:red;
+  color: red;
 }
 
 .success {
-  color:green;
+  color: green;
 }
 
 .Footer a {
-  padding-left:2px;
-  padding-right:2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .Footer a.active {
-  font-weight:bold;
+  font-weight: bold;
 }
